@@ -5,11 +5,17 @@ import java.util.Scanner;
 /**
  *
  * @author clamascabaleiro
+ * @version 1.0
+ * @since 2018
  */
 public class NumeroPositivo {
 
     Scanner res = new Scanner(System.in);
-
+/**
+ * Evalua si un numero es positivo, realizando una comprobacion si es mayor o igual que 0 es positivo, en caso contrario es negativo y muestra por pantalla el resultado
+ * @since 2018
+ * 
+ */
     public void NumPositivo() {
         System.out.println("Teclea el numero : ");
         int num = res.nextInt();
