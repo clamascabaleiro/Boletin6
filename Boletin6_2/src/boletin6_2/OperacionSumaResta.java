@@ -1,6 +1,8 @@
 package boletin6_2;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
 
 /**
  * Sirve para saber si se suman dos numeros o se restan
@@ -10,22 +12,21 @@ import java.util.Scanner;
  */
 public class OperacionSumaResta {
 
-    Scanner res = new Scanner(System.in);
 /**
  * Evalua si un numero es mayor que otro o igual, en caso de que sea mayor o igual realiza la resta. Si es menor realiza la suma de ellos
  */
     public void OpeSumRes() {
-        
-        System.out.println("Teclea el numero : ");
-        short num1 = res.nextShort();
-        System.out.println("Teclea el numero");
-        short num2 = res.nextShort();
+        short num1,num2;
+        String numero1 = JOptionPane.showInputDialog("Teclea numero 1 : ");
+        num1 = Short.parseShort(numero1);
+        String numero2 = JOptionPane.showInputDialog("Teclea numero 2 : ");
+        num2 = Short.parseShort (numero2);
         short suma = (short) (num1 + num2);
         short resta = (short) (num1 - num2);
         if (num1 >= num2) {
-            System.out.println("La resta es = " + resta);
+            JOptionPane.showMessageDialog(null, "La resta es = " + resta);
         } else {
-            System.out.println("La suma es = " + suma);
+            JOptionPane.showMessageDialog(null, "La suma es = " + suma);
         }
 
     }
