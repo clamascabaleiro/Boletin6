@@ -3,14 +3,19 @@ package boletin6_2;
 import java.util.Scanner;
 
 /**
- *
- * @author clamascabaleiro
+ * Sirve para saber si se suman dos numeros o se restan
+ * @author Christian Lamas
+ * @since 2018
+ * @version 1.0
  */
 public class OperacionSumaResta {
 
     Scanner res = new Scanner(System.in);
-
+/**
+ * Evalua si un numero es mayor que otro o igual, en caso de que sea mayor o igual realiza la resta. Si es menor realiza la suma de ellos
+ */
     public void OpeSumRes() {
+        
         System.out.println("Teclea el numero : ");
         short num1 = res.nextShort();
         System.out.println("Teclea el numero");
