@@ -31,9 +31,9 @@ public class calcularAreas {
     }
     
     public void calcularCirculo (){
-       int radio,area;
-       radio = Integer.parseInt(JOptionPane.showInputDialog("Introduzca el radio:"));
-       area = (int) (radio * Math.PI);
+       double radio,area;
+       radio = Double.parseDouble(JOptionPane.showInputDialog("Introduzca el radio:"));
+       area = (double) (radio * Math.PI);
        JOptionPane.showMessageDialog(null, "La superficie del circulo es: " + area);
     }
 }
